@@ -1,1 +1,22 @@
-<html></html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>엑셀 번역기</title>
+  </head>
+  <body>
+    <h1>엑셀 변역기</h1>
+    <form method="POST" action="/translate" enctype="multipart/form-data">
+      <input type="file" name="file">
+      <br>
+      <label for="lang">Select a language to translate:</label>
+      <select id="lang" name="lang">
+        <option value="en">영어</option>
+        <option value="ja">일본어</option>
+        <option value="zh-cn">중국어</option>
+      </select>
+      <br>
+      <input type="submit" value="Translate">
+    </form>
+  </body>
+</html>
